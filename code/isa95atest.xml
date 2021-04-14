@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="http://yourorganisation.org/isa95atest/Types.xsd" xmlns:s2="http://www.OPCFoundation.org/UA/2013/01/ISA95/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://yourorganisation.org/isa95atest/</Uri>
+        <Uri>http://www.OPCFoundation.org/UA/2013/01/ISA95</Uri>
+    </NamespaceUris>
+    <Aliases>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasISA95Attribute">ns=2;i=4713</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <ua:ModelInfo Tool="UaModeler" Hash="NtX0xENCQjCumDGB+3WZwA==" Version="1.6.5"/>
+        </Extension>
+    </Extensions>
+    <UAObject NodeId="ns=1;i=5002" BrowseName="1:exa1">
+        <DisplayName>exa1</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=5057</Reference>
+            <Reference ReferenceType="HasISA95Attribute">ns=1;i=6001</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6001" BrowseName="2:Version" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Version</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasISA95Attribute" IsForward="false">ns=1;i=5002</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>
