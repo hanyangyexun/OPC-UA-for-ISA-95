@@ -1,0 +1,21 @@
+Thank you for your reply.
+
+To reproduce, the following are my development processes:
+
+1. generate ISA-95 namespace (`ua_namespace_isa95.c/.h` files) from `Opc.ISA95.NodeSet2.xml` file.
+
+![1](https://raw.githubusercontent.com/hanyangyexun/OPC-UA-for-ISA-95/master/screenshot/1.png)
+
+2. generate user-specific namespace (`isa95atest.c/.h` files) from `isa95atest.xml` exported from UA Modeler.
+
+![1](https://raw.githubusercontent.com/hanyangyexun/OPC-UA-for-ISA-95/master/screenshot/2.png)
+
+3. make a main server `isa95_server.c` and compile all the c files.
+
+![1](https://raw.githubusercontent.com/hanyangyexun/OPC-UA-for-ISA-95/master/screenshot/3.png)
+
+4. run `isa95_server`
+
+![1](https://raw.githubusercontent.com/hanyangyexun/OPC-UA-for-ISA-95/master/screenshot/4.png)
+
+All used files can be accessed at [here](https://github.com/hanyangyexun/OPC-UA-for-ISA-95).
